@@ -11,12 +11,13 @@ A modular, lore-driven website built with HTML, CSS, TypeScript, PHP, and SQL. D
 - **Admin Dashboard**: Custom Business Management tool  
 - **Themes**: Easily switchable via UI or config  
 - **API Integration**: SumUp  
-- **Contributor**: Harry (C#, HTML, CSS)
+- **Contributor**: Harry
 
 ---
 
 ## Folder Structure
 
+```
 PixelsPast/
 ├── .vscode/             # VS Code workspace config (extensions, formatting, theme)
 ├── README.md            # Project overview and setup guide
@@ -39,7 +40,7 @@ PixelsPast/
 │   ├── sql/             # SQL schema and seed data
 │   └── lib/             # Reusable libraries or third-party integrations
 │
-├── api/                 # Public-facing API endpoints (e.g. SumUp)
+├── api/                 # Public-facing API endpoints (e.g., SumUp)
 │   └── sumup.php
 │
 ├── admin/               # Admin dashboard (Business Manager tool)
@@ -57,6 +58,7 @@ PixelsPast/
 ├── bin/                 # Build output or CLI tools (optional)
 │
 └── notion/              # (Optional) Synced Notion exports or Kanban snapshots
+```
 
 ---
 
@@ -92,6 +94,7 @@ Prettier and ESLint are preconfigured in .vscode/settings.json, formatting rules
 
 Themes are stored in /public/themes/ and loaded dynamically based on:
 
+```
 [User Visit]
      ↓
 [Check URL Parameter: ?theme=xyz]
@@ -105,6 +108,7 @@ Themes are stored in /public/themes/ and loaded dynamically based on:
 [Else → Load default theme (e.g. 'retro')]
      ↓
 [Apply theme CSS + assets dynamically]
+```
 
 Each theme includes:
 
@@ -137,7 +141,7 @@ Accessible via /admin includes:
 
 - Domain transferred from IONOS → Cloudflare
 - SSL enabled via Cloudflare
-- "www." subdomain active
+- ```www.``` subdomain active
 
 ---
 
@@ -174,7 +178,7 @@ Harry
 
 - Use semantic tags
 - Nest logically
-- Use aria-* for accessibility
+- Use ```aria-*``` for accessibility
 - Unique IDs, class-based styling
 - Labelled forms with fieldsets
 
