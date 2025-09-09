@@ -1,0 +1,13 @@
+{
+	"recommendations": [
+		"esbenp.prettier-vscode",
+		"dbaeumer.vscode-eslint",
+		"bmewburn.vscode-intelephense-client",
+		"formulahendry.auto-close-tag",
+		"formulahendry.auto-rename-tag",
+		"naumovs.color-highlight",
+		"bradlc.vscode-tailwindcss",
+		"CorreiaGitHubGruvbox.correia-github-gruvbox",
+		"PKief.material-icon-theme"
+	]
+}

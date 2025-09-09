@@ -1,0 +1,51 @@
+{
+	// 📦 Base compiler options
+	"compilerOptions": {
+		// 🧠 Target modern JS for compatibility and performance
+		"target": "ES2020",
+
+		// 📦 Use ES modules for clean import/export
+		"module": "ESNext",
+
+		// 🧩 Enable module resolution for scalable architecture
+		"moduleResolution": "Node",
+
+		// 🧼 Remove unused code and enable tree-shaking
+		"isolatedModules": true,
+
+		// 🧠 Strict typing for semantic clarity and safety
+		"strict": true,
+
+		// 🧪 Catch common bugs early
+		"noImplicitAny": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noFallthroughCasesInSwitch": true,
+
+		// 🧱 Support JSX if needed for future UI components
+		"jsx": "react-jsx",
+
+		// 📁 Output compiled JS to /public/js
+		"outDir": "./public/js",
+
+		// 📁 Source files live in /core and /public/ts
+		"rootDir": "./src",
+
+		// 🧩 Allow imports from theme and core folders
+		"baseUrl": ".",
+		"paths": {
+			"@core/*": ["src/core/*"],
+			"@ts/*": ["src/ts/*"],
+			"@themes/*": ["public/themes/*"]
+		},
+
+		// 🧼 Enable source maps for debugging
+		"sourceMap": true,
+
+		// 🧠 Support decorators if needed for lore-driven UI logic
+		"experimentalDecorators": true
+	},
+
+	"include": ["src/**/*"],
+	"exclude": ["node_modules", "public", "sql", "bin", "res"]
+}
